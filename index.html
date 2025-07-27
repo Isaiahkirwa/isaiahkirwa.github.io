@@ -1,83 +1,284 @@
-<section class="skills container position-relative" data-aos="fade-up" style="padding: 80px 15px 100px;">
-  <svg class="skills-bg-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#4f46e5" fill-opacity="0.15" d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,213.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-  </svg>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isaiah Kirwa | Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+    }
 
-  <h2 style="position: relative; z-index: 1; text-align: center; margin-bottom: 50px; font-weight: 700; color: #3730a3;">My Skills</h2>
+    .hero {
+      background: linear-gradient(to right, #4f46e5, #6d28d9);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-  <div class="row g-4 justify-content-center" style="position: relative; z-index: 1;">
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="bookkeeping.html" class="skill-card" style="background: linear-gradient(135deg, #7b2ff7, #f107a3); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-book fa-2x"></i>
-        </div>
-        <h5>Bookkeeping & Financial Record-Keeping</h5>
-      </a>
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .icon-circle {
+      background: rgba(255, 255, 255, 0.3);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    .skill-card {
+      border-radius: 15px;
+      padding: 25px;
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+    }
+
+    .skill-card:hover .icon-circle {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .skills-bg-wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      z-index: 0;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #d1d5db;
+    }
+
+    footer a {
+      color: #d1d5db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Isaiah Kirwa</h1>
+    <p>MBA Candidate | Business IT Graduate | Financial Systems &amp; Ops Support</p>
+  </header>
+
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4 text-primary">About Me</h2>
+    <p class="text-center">
+      I completed a Bachelor's degree in Business Information Technology. During
+      my studies, I worked on projects bridging business and technology.<br />
+      Currently, I am pursuing an MBA at Anglia Ruskin University to deepen my
+      business acumen and leadership.
+    </p>
+  </section>
+
+  <section
+    class="skills container position-relative"
+    style="padding: 80px 15px 100px"
+  >
+    <svg
+      class="skills-bg-wave"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#4f46e5"
+        fill-opacity="0.15"
+        d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,213.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+
+    <h2
+      style="
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 700;
+        color: #3730a3;
+      "
+    >
+      My Skills
+    </h2>
+
+    <div
+      class="row g-4 justify-content-center"
+      style="position: relative; z-index: 1"
+    >
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="bookkeeping.html"
+          class="skill-card"
+          style="
+            background: linear-gradient(135deg, #7b2ff7, #f107a3);
+          "
+          title="Bookkeeping & Financial Record-Keeping"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-book fa-2x"></i>
+          </div>
+          <h5>Bookkeeping &amp; Financial Record-Keeping</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="xero.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #f7971e, #ffd200)"
+          title="Accounting Software (Xero) Proficiency"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-file-invoice-dollar fa-2x"></i>
+          </div>
+          <h5>Accounting Software (Xero) Proficiency</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="automation.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #43cea2, #185a9d)"
+          title="Financial Process Automation"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-robot fa-2x"></i>
+          </div>
+          <h5>Financial Process Automation</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="coordination.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #ff5f6d, #ffc371)"
+          title="Stakeholder & Partner Coordination"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-handshake fa-2x"></i>
+          </div>
+          <h5>Stakeholder &amp; Partner Coordination</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="management.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #667eea, #764ba2)"
+          title="Management Accounts & Variance Analysis"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-chart-line fa-2x"></i>
+          </div>
+          <h5>Management Accounts &amp; Variance Analysis</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="procurement.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #ff9966, #ff5e62)"
+          title="Procurement & Inventory Management"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-box-open fa-2x"></i>
+          </div>
+          <h5>Procurement &amp; Inventory Management</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="operations.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #43cea2, #185a9d)"
+          title="Business Operations Support"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-cogs fa-2x"></i>
+          </div>
+          <h5>Business Operations Support</h5>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="webdev.html"
+          class="skill-card"
+          style="background: linear-gradient(135deg, #1d976c, #93f9b9)"
+          title="Web Development & Design"
+          >
+          <div class="icon-circle">
+            <i class="fas fa-laptop-code fa-2x"></i>
+          </div>
+          <h5>Web Development &amp; Design</h5>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="xero.html" class="skill-card" style="background: linear-gradient(135deg, #f7971e, #ffd200); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-file-invoice-dollar fa-2x"></i>
-        </div>
-        <h5>Accounting Software (Xero) Proficiency</h5>
-      </a>
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p>© 2025 Isaiah Kirwa. All rights reserved.</p>
+      <p>
+        Connect on
+        <a href="https://linkedin.com/in/isaiahkirwa" target="_blank"
+          >LinkedIn</a
+        >
+        | <a href="mailto:isaiah.kirwa@example.com">Email Me</a>
+      </p>
     </div>
+  </footer>
 
-    <!-- Repeat for each skill, wrapping the entire skill card inside the <a> -->
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="automation.html" class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-robot fa-2x"></i>
-        </div>
-        <h5>Financial Process Automation</h5>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="coordination.html" class="skill-card" style="background: linear-gradient(135deg, #ff5f6d, #ffc371); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-handshake fa-2x"></i>
-        </div>
-        <h5>Stakeholder & Partner Coordination</h5>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="management.html" class="skill-card" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-chart-line fa-2x"></i>
-        </div>
-        <h5>Management Accounts & Variance Analysis</h5>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="procurement.html" class="skill-card" style="background: linear-gradient(135deg, #ff9966, #ff5e62); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-box-open fa-2x"></i>
-        </div>
-        <h5>Procurement & Inventory Management</h5>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="operations.html" class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-cogs fa-2x"></i>
-        </div>
-        <h5>Business Operations Support</h5>
-      </a>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="webdev.html" class="skill-card" style="background: linear-gradient(135deg, #1d976c, #93f9b9); color: white; border-radius: 15px; padding: 25px; display: block; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.12);">
-        <div class="icon-circle mx-auto" style="background: rgba(255, 255, 255, 0.3); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white;">
-          <i class="fas fa-code fa-2x"></i>
-        </div>
-        <h5>Basic Web Development</h5>
-      </a>
-    </div>
-  </div>
-</section>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
