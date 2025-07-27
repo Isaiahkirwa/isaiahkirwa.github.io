@@ -3,46 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isaiah Kirwa - Portfolio</title>
+  <title>Isaiah Kirwa | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a2e8a6a0c3.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+    header {
+      background: #1e40af;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      border: none;
+      padding: 0.75rem 1.75rem;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+    }
+    section.skills {
+      padding: 60px 15px;
+      background: white;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.05);
+    }
+    .skills h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #1e40af;
+    }
+    .skill-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      color: #475569;
+    }
+    .skill-item i {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-right: 15px;
+      min-width: 35px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Isaiah Kirwa</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header data-aos="fade-down">
+    <h1>Isaiah Kirwa</h1>
+    <p>Business Information Technology Graduate | MBA Candidate</p>
+    <a href="about.html" class="btn btn-primary mt-4">Learn More About Me</a>
+  </header>
 
-  <!-- Main content -->
-  <main class="container my-5">
-    <div class="bg-light p-5 rounded shadow-sm">
-      <h1 class="mb-4">Welcome!</h1>
-      <p class="lead">
-        I hold a Bachelor's degree in Business Information Technology and am currently pursuing an MBA at Anglia Ruskin University.
-      </p>
-      <p>
-        My passion is bridging the gap between business and technology through innovative projects.
-      </p>
+  <section class="skills" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <div class="skill-item">
+      <i class="fas fa-book"></i>
+      <span>Bookkeeping and Financial Record-Keeping</span>
     </div>
-  </main>
+    <div class="skill-item">
+      <i class="fas fa-file-invoice-dollar"></i>
+      <span>Accounting Software (Xero) Proficiency</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-robot"></i>
+      <span>Financial Process Automation</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-handshake"></i>
+      <span>Stakeholder and External Partner Coordination</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-chart-line"></i>
+      <span>Management Accounts Preparation & Variance Analysis</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-box-open"></i>
+      <span>Procurement and Inventory Management</span>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-cogs"></i>
+      <span>Business Operations Support</span>
+    </div>
+  </section>
 
-  <footer class="bg-light text-center py-3">
-    &copy; 2025 Isaiah Kirwa
+  <footer>
+    &copy; 2025 Isaiah Kirwa. All rights reserved.
   </footer>
 
+  <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+    });
+  </script>
 </body>
 </html>
