@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -68,9 +68,6 @@
       color: #1e40af;
     }
     .skill-card {
-      background: #2563eb;
-      color: white;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: default;
       padding: 30px 20px;
       border-radius: 12px;
@@ -79,13 +76,16 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .skill-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
     .icon-circle {
-      background: #1e40af;
+      background: rgba(255,255,255,0.3);
       width: 70px;
       height: 70px;
       border-radius: 50%;
@@ -121,57 +121,63 @@
     <h2>My Skills</h2>
     <div class="row g-4 justify-content-center">
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-book fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #7b2ff7, #f107a3);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-book fa-2x"></i>
           </div>
           <h5>Bookkeeping &amp; Financial Record-Keeping</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-file-invoice-dollar fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-file-invoice-dollar fa-2x"></i>
           </div>
           <h5>Accounting Software (Xero) Proficiency</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-robot fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-robot fa-2x"></i>
           </div>
           <h5>Financial Process Automation</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-handshake fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #ff5f6d, #ffc371);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-handshake fa-2x"></i>
           </div>
           <h5>Stakeholder &amp; Partner Coordination</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-chart-line fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-chart-line fa-2x"></i>
           </div>
           <h5>Management Accounts &amp; Variance Analysis</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-box-open fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-box-open fa-2x"></i>
           </div>
           <h5>Procurement &amp; Inventory Management</h5>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card">
-          <div class="icon-circle">
-            <i class="fas fa-cogs fa-2x text-white"></i>
+        <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);">
+          <div class="icon-circle mx-auto">
+            <i class="fas fa-cogs fa-2x"></i>
           </div>
           <h5>Business Operations Support</h5>
         </div>
