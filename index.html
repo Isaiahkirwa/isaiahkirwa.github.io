@@ -1,131 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaiah Kirwa | Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- AOS Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a2e8a6a0c3.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-      color: #333;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
     }
-    header {
-      background: #1e40af;
+    .hero {
+      background: linear-gradient(to right, #4f46e5, #6d28d9);
       color: white;
-      padding: 80px 15px;
+      padding: 80px 20px;
       text-align: center;
-      flex-shrink: 0;
     }
-    header h1 {
-      font-weight: 700;
+    .hero h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-weight: bold;
     }
-    header p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    .btn-primary {
-      background-color: #2563eb;
-      border: none;
-      padding: 0.75rem 1.75rem;
-      font-size: 1.1rem;
-      border-radius: 50px;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn-primary:hover {
-      background-color: #1d4ed8;
-      color: white;
-      text-decoration: none;
-    }
-    section.skills.container {
-      padding: 60px 15px;
-      max-width: 900px;
-      margin-top: 40px;
-      margin-bottom: 60px;
-      flex-grow: 1;
-    }
-    section.skills h2 {
-      text-align: center;
-      margin-bottom: 50px;
-      font-weight: 700;
-      color: #1e40af;
-    }
-    .skill-card {
-      cursor: default;
-      padding: 30px 20px;
-      border-radius: 12px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      color: white;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .skill-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+    .hero p {
+      font-size: 1.2rem;
     }
     .icon-circle {
-      background: rgba(255,255,255,0.3);
+      background: rgba(255, 255, 255, 0.3);
       width: 70px;
       height: 70px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      color: white;
     }
-    .skill-card h5 {
-      font-weight: 600;
-      font-size: 1.1rem;
+    .skill-card {
+      padding: 25px;
+      border-radius: 15px;
+      color: white;
       text-align: center;
-      margin: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    .skills-bg-wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      z-index: 0;
+      opacity: 0.2;
+      pointer-events: none;
     }
     footer {
-      text-align: center;
-      padding: 25px 15px;
-      font-size: 0.9rem;
-      color: #cbd5e1;
-      background: #1e40af;
-      flex-shrink: 0;
-      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      background-color: #111827;
     }
   </style>
 </head>
 <body>
-  <header data-aos="fade-down">
+  <header class="hero">
     <h1>Isaiah Kirwa</h1>
-    <p>Business Information Technology Graduate | MBA Candidate</p>
-    <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+    <p>MBA Candidate | Business IT Graduate | Financial Systems & Ops Support</p>
   </header>
 
-  <section class="skills container" data-aos="fade-up">
-    <h2>My Skills</h2>
-    <div class="row g-4 justify-content-center">
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4 text-primary">About Me</h2>
+    <p class="text-center">
+      I completed a Bachelor's degree in Business Information Technology. During my studies, I worked on projects bridging business and technology.<br>
+      Currently, I am pursuing an MBA at Anglia Ruskin University to deepen my business acumen and leadership.
+    </p>
+  </section>
+
+  <section class="skills container position-relative" data-aos="fade-up" style="padding: 80px 15px 100px;">
+    <svg class="skills-bg-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#4f46e5" fill-opacity="0.15" d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,213.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
+
+    <h2 style="position: relative; z-index: 1; text-align: center; margin-bottom: 50px; font-weight: 700; color: #3730a3;">My Skills</h2>
+
+    <div class="row g-4 justify-content-center" style="position: relative; z-index: 1;">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #7b2ff7, #f107a3);">
           <div class="icon-circle mx-auto">
@@ -134,7 +92,6 @@
           <h5>Bookkeeping &amp; Financial Record-Keeping</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
           <div class="icon-circle mx-auto">
@@ -143,7 +100,6 @@
           <h5>Accounting Software (Xero) Proficiency</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);">
           <div class="icon-circle mx-auto">
@@ -152,7 +108,6 @@
           <h5>Financial Process Automation</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #ff5f6d, #ffc371);">
           <div class="icon-circle mx-auto">
@@ -161,7 +116,6 @@
           <h5>Stakeholder &amp; Partner Coordination</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #667eea, #764ba2);">
           <div class="icon-circle mx-auto">
@@ -170,7 +124,6 @@
           <h5>Management Accounts &amp; Variance Analysis</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
           <div class="icon-circle mx-auto">
@@ -179,7 +132,6 @@
           <h5>Procurement &amp; Inventory Management</h5>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
         <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);">
           <div class="icon-circle mx-auto">
@@ -191,20 +143,19 @@
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 Isaiah Kirwa. All rights reserved.
+  <footer class="text-light bg-dark py-4 mt-5">
+    <div class="container text-center">
+      <h5 class="mb-3">Isaiah Kirwa</h5>
+      <p class="mb-2">Business Information Technology | MBA Candidate</p>
+      <div class="mb-3">
+        <a href="mailto:isaiahkirwa96@gmail.com" class="text-light me-3"><i class="fas fa-envelope"></i> isaiahkirwa96@gmail.com</a><br>
+        <a href="tel:07823847841" class="text-light me-3"><i class="fas fa-phone-alt"></i> 07823847841</a><br>
+        <a href="https://linkedin.com/in/isaiah-kirwa-b28866252" target="_blank" class="text-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+      <p class="mb-0 small">&copy; 2025 Isaiah Kirwa. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- AOS Animation JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 900,
-      once: true,
-    });
-  </script>
 </body>
 </html>
