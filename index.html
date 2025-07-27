@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -20,16 +20,20 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: #f9fafb;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
       color: #333;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background: #1e40af;
       color: white;
       padding: 80px 15px;
       text-align: center;
+      flex-shrink: 0;
     }
     header h1 {
       font-weight: 700;
@@ -59,7 +63,8 @@
       padding: 60px 15px;
       max-width: 900px;
       margin-top: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      flex-grow: 1;
     }
     section.skills h2 {
       text-align: center;
@@ -76,13 +81,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       color: white;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .skill-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.15);
     }
     .icon-circle {
       background: rgba(255,255,255,0.3);
@@ -104,9 +109,10 @@
       text-align: center;
       padding: 25px 15px;
       font-size: 0.9rem;
-      color: #64748b;
-      background: #f3f4f6;
-      margin-top: 40px;
+      color: #cbd5e1;
+      background: #1e40af;
+      flex-shrink: 0;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
