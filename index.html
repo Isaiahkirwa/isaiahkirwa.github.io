@@ -8,214 +8,168 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fc;
+      background: linear-gradient(135deg, #f8fafc, #e0e7ff 100%);
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0; padding: 0;
     }
     .hero {
-      background: linear-gradient(to right, #4f46e5, #6d28d9);
-      color: white;
-      padding: 80px 20px;
+      background: linear-gradient(120deg, #6366f1 0%, #9333ea 100%);
+      color: #fff;
+      padding: 80px 20px 50px 20px;
       text-align: center;
+      position: relative;
     }
-    .hero h1 { font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem; }
-    .hero p { font-size: 1.2rem; margin: 0; }
-    .icon-circle {
-      background: rgba(255, 255, 255, 0.3);
-      width: 70px; height: 70px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 15px auto; color: white;
-      transition: background 0.3s ease;
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+      letter-spacing: -1px;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+    .skills-section {
+      margin-top: -40px;
+      padding-bottom: 80px;
     }
     .skill-card {
-      border-radius: 15px; padding: 25px; color: white;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-decoration: none; display: block; text-align: center;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(80, 63, 205, 0.12);
+      transition: transform 0.22s, box-shadow 0.22s;
+      text-align: center;
+      padding: 40px 24px 28px 24px;
       cursor: pointer;
+      text-decoration: none;
+      color: #222;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
     }
     .skill-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-      text-decoration: none;
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 16px 36px rgba(80, 63, 205, 0.15);
+      color: #111;
     }
-    .skill-card:hover .icon-circle { background: rgba(255,255,255,0.5); }
-    footer { background-color: #111827; color: #d1d5db; }
-    footer a { color: #d1d5db; text-decoration: none; }
+    .icon-circle {
+      background: linear-gradient(135deg, #6366f1, #9333ea);
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 22px auto;
+      color: #fff;
+      font-size: 2.3rem;
+      box-shadow: 0 4px 18px #6366f14d;
+      transition: background 0.3s;
+    }
+    .skill-card:hover .icon-circle {
+      background: linear-gradient(135deg, #9333ea, #6366f1);
+    }
+    .skill-card h5 {
+      font-size: 1.22rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    .skill-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0;
+      opacity: 0.85;
+    }
+    @media (max-width: 767px) {
+      .skills-section { padding-bottom: 30px; }
+      .skill-card { padding: 30px 12px 20px 12px; min-height: 210px; }
+      .icon-circle { width: 56px; height: 56px; font-size: 1.6rem; }
+    }
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 30px 0 22px 0;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 0.1px;
+    }
+    footer a { color: #c4b5fd; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <header class="hero">
+  <div class="hero">
     <h1>Isaiah Kirwa</h1>
     <p>MBA Candidate | Business IT Graduate | Financial Systems &amp; Ops Support</p>
-  </header>
+  </div>
 
-  <section class="container my-5">
-    <h2 class="text-center fw-bold mb-4 text-primary">About Me</h2>
-    <p class="text-center">
-      I completed a Bachelor's degree in Business Information Technology. During
-      my studies, I worked on projects bridging business and technology.<br />
-      Currently, I am pursuing an MBA at Anglia Ruskin University to deepen my
-      business acumen and leadership.
-    </p>
-  </section>
-
-  <section class="skills container" style="padding: 80px 15px 100px">
-    <h2 class="text-center fw-bold mb-5" style="color: #3730a3;">My Skills</h2>
+  <section class="container skills-section">
     <div class="row g-4 justify-content-center">
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #7b2ff7, #f107a3);" data-bs-toggle="modal" data-bs-target="#modalBookkeeping">
-          <div class="icon-circle"><i class="fas fa-book fa-2x"></i></div>
-          <h5>Bookkeeping &amp; Financial Record-Keeping</h5>
-        </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="bookkeeping.html" class="skill-card" title="Bookkeeping & Financial Record-Keeping">
+          <div class="icon-circle"><i class="fas fa-book"></i></div>
+          <h5>Bookkeeping & Financial Record-Keeping</h5>
+          <p>Accurate daily transactions, ledgers & compliance.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #f7971e, #ffd200);" data-bs-toggle="modal" data-bs-target="#modalXero">
-          <div class="icon-circle"><i class="fas fa-file-invoice-dollar fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="xero.html" class="skill-card" title="Accounting Software (Xero) Proficiency">
+          <div class="icon-circle"><i class="fas fa-file-invoice-dollar"></i></div>
           <h5>Accounting Software (Xero) Proficiency</h5>
-        </div>
+          <p>Cloud accounting, payroll, reports & reconciliation.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);" data-bs-toggle="modal" data-bs-target="#modalAutomation">
-          <div class="icon-circle"><i class="fas fa-robot fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="automation.html" class="skill-card" title="Financial Process Automation">
+          <div class="icon-circle"><i class="fas fa-robot"></i></div>
           <h5>Financial Process Automation</h5>
-        </div>
+          <p>Automate workflows, save time, boost accuracy.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #ff5f6d, #ffc371);" data-bs-toggle="modal" data-bs-target="#modalCoordination">
-          <div class="icon-circle"><i class="fas fa-handshake fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="coordination.html" class="skill-card" title="Stakeholder & Partner Coordination">
+          <div class="icon-circle"><i class="fas fa-handshake"></i></div>
           <h5>Stakeholder &amp; Partner Coordination</h5>
-        </div>
+          <p>Communication, expectation management, alignment.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #667eea, #764ba2);" data-bs-toggle="modal" data-bs-target="#modalManagement">
-          <div class="icon-circle"><i class="fas fa-chart-line fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="management.html" class="skill-card" title="Management Accounts & Variance Analysis">
+          <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
           <h5>Management Accounts &amp; Variance Analysis</h5>
-        </div>
+          <p>Trends, cost control, strategic insight for growth.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #ff9966, #ff5e62);" data-bs-toggle="modal" data-bs-target="#modalDataAnalysis">
-          <div class="icon-circle"><i class="fas fa-database fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="data-analysis.html" class="skill-card" title="Data Analysis">
+          <div class="icon-circle"><i class="fas fa-database"></i></div>
           <h5>Data Analysis</h5>
-        </div>
+          <p>Transform data into insights, visualize trends, support decisions.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #43cea2, #185a9d);" data-bs-toggle="modal" data-bs-target="#modalOperations">
-          <div class="icon-circle"><i class="fas fa-cogs fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="operations.html" class="skill-card" title="Business Operations Support">
+          <div class="icon-circle"><i class="fas fa-cogs"></i></div>
           <h5>Business Operations Support</h5>
-        </div>
+          <p>Efficient processes, documentation, reporting & compliance.</p>
+        </a>
       </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="skill-card" style="background: linear-gradient(135deg, #1d976c, #93f9b9);" data-bs-toggle="modal" data-bs-target="#modalWebDev">
-          <div class="icon-circle"><i class="fas fa-laptop-code fa-2x"></i></div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="webdev.html" class="skill-card" title="Web Development & Design">
+          <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
           <h5>Web Development &amp; Design</h5>
-        </div>
+          <p>Modern, responsive sites with seamless user experience.</p>
+        </a>
       </div>
-
     </div>
   </section>
 
-  <!-- Modals for skill explanations -->
-  <div class="modal fade" id="modalBookkeeping" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Bookkeeping &amp; Financial Record-Keeping</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>Bookkeeping is the backbone of all financial processes, involving the accurate recording of daily transactions. I have experience maintaining ledgers, reconciling accounts, and preparing financial statements. By keeping precise records, I help businesses track income, expenses, and ensure regulatory adherence, laying the groundwork for sound financial management.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalXero" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Accounting Software (Xero) Proficiency</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I am proficient in Xero, a leading cloud-based accounting platform. My expertise includes managing invoices, payroll, bank reconciliations, and generating financial reports to help organizations make data-driven decisions.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalAutomation" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Financial Process Automation</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I have implemented workflows that automate invoicing, payment reminders, and reconciliation using tools like Zapier and built-in automation features. Automation saves time, reduces error, and allows businesses to focus on strategic goals.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalCoordination" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Stakeholder &amp; Partner Coordination</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>Coordinating with stakeholders and partners is key for smooth operations. I facilitate communication, manage expectations, and ensure alignment between departments and external partners for project success.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalManagement" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Management Accounts &amp; Variance Analysis</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I prepare management accounts and conduct variance analysis to help identify trends, control costs, and inform decision-making for business growth.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalDataAnalysis" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Data Analysis</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I utilize data analysis tools to transform raw data into actionable insights. My skills include cleaning datasets, performing statistical analysis, visualizing trends, and supporting data-driven business strategies. Data analysis helps organizations make informed decisions and optimize their operations.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalOperations" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Business Operations Support</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I assist in operational processes to ensure efficiency and compliance, supporting teams with process documentation, reporting, and workflow improvements.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <div class="modal fade" id="modalWebDev" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Web Development &amp; Design</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p>I create and maintain responsive web pages using HTML, CSS, and JavaScript, ensuring a professional online presence and seamless user experience.</p>
-      </div>
-    </div></div>
-  </div>
-
-  <footer class="py-4 text-center">
-    <div class="container">
-      <p>© 2025 Isaiah Kirwa. All rights reserved.</p>
-      <p>
-        Connect on
-        <a href="https://linkedin.com/in/isaiahkirwa" target="_blank">LinkedIn</a>
-        | <a href="mailto:isaiah.kirwa@example.com">Email Me</a>
-      </p>
-    </div>
+  <footer>
+    <p>© 2025 Isaiah Kirwa. All rights reserved.<br>
+      Connect on
+      <a href="https://linkedin.com/in/isaiahkirwa" target="_blank">LinkedIn</a>
+      | <a href="mailto:isaiahkirwa96@gmail.com">Email Me</a>
+    </p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
